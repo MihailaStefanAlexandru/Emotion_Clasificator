@@ -1,0 +1,42 @@
+                                                    text  label
+0                                i didnt feel humiliated      0
+1      i can go from feeling so hopeless to so damned...      0
+2       im grabbing a minute to post i feel greedy wrong      3
+3      i am ever feeling nostalgic about the fireplac...      2
+4                                   i am feeling grouchy      3
+...                                                  ...    ...
+15995  i just had a very brief time in the beanbag an...      0
+15996  i am now turning and i feel pathetic that i am...      0
+15997                     i feel strong and good overall      1
+15998  i feel like this was such a rude comment and i...      3
+15999  i know a lot but i feel so stupid because i ca...      0
+
+[15999 rows x 2 columns]
+                                                   text  label
+0     im feeling quite sad and sorry for myself but ...      0
+1     i feel like i am still looking at a blank canv...      0
+2                        i feel like a faithful servant      2
+3                     i am just feeling cranky and blue      3
+4     i can have for a treat or if i am feeling festive      1
+...                                                 ...    ...
+1995  im having ssa examination tomorrow in the morn...      0
+1996  i constantly worry about their fight against n...      1
+1997  i feel its important to share this info for th...      1
+1998  i truly feel that if you are passionate enough...      1
+1999  i feel like i just wanna buy any cute make up ...      1
+
+[2000 rows x 2 columns]
+                                                   text  label
+0     im feeling rather rotten so im not very ambiti...      0
+1             im updating my blog because i feel shitty      0
+2     i never make her separate from me because i do...      0
+3     i left with my bouquet of red and yellow tulip...      1
+4       i was feeling a little vain when i did this one      0
+...                                                 ...    ...
+1995  i just keep feeling like someone is being unki...      3
+1996  im feeling a little cranky negative after this...      3
+1997  i feel that i am useful to my people and that ...      1
+1998  im feeling more comfortable with derby i feel ...      1
+1999  i feel all weird when i have to meet w people ...      4
+
+[2000 rows x 2 columns]
