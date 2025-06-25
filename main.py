@@ -147,21 +147,18 @@ df_train = df_train.drop_duplicates(keep='first')
 df_valid = df_valid.drop_duplicates(keep='first')
 df_test = df_test.drop_duplicates(keep='first')
 
-# df = df.applymap(lambda x: x.lower() if isinstance(x, str) else x)
 # transformarea din uppercase in lowercase
 
 df_train = df_train.map(lambda x: x.lower() if isinstance(x, str) else x)
 df_valid = df_valid.map(lambda x: x.lower() if isinstance(x, str) else x)
 df_test = df_test.map(lambda x: x.lower() if isinstance(x, str) else x)
 
-# df = df.replace(to_replace=r'[^\w\s]', value='', regex=True)
 # eliminare a caracterelor care nu sunt cuvinte si care nu sunt whitespace-uri
 
 df_train = df_train.replace(to_replace=r'[^\w\s]', value='', regex=True)
 df_valid = df_valid.replace(to_replace=r'[^\w\s]', value='', regex=True)
 df_test = df_test.replace(to_replace=r'[^\w\s]', value='', regex=True)
 
-# df = df.replace(to_replace=r'\d', value='', regex=True)
 # eliminare cifre din text
 # posibil sa nu mai fie nevoie daca am eliminat caracterele care nu sunt
 # cuvinte si whitespace-uri
@@ -171,15 +168,12 @@ df_valid = df_valid.replace(to_replace=r'\d', value='', regex=True)
 df_test = df_test.replace(to_replace=r'\d', value='', regex=True)
 
 # tokenizare
-# df['Message'] = df['Message'].apply(word_tokenize)
 
 df_train['text'] = df_train['text'].apply(lambda x: tokenizer.tokenize(x) if isinstance(x, str) else x)
 df_valid['text'] = df_valid['text'].apply(lambda x: tokenizer.tokenize(x) if isinstance(x, str) else x)
 df_test['text'] = df_test['text'].apply(lambda x: tokenizer.tokenize(x) if isinstance(x, str) else x)
 
 # stergere stopwords
-# stop_words = set(stopwords.words('english'))
-# df['Message'] = df['Message'].apply(lambda x: [word for word in x if word not in stop_words])
 
 df_train['text'] = df_train['text'].apply(lambda x: [word for word in x if word not in stop_words])
 df_valid['text'] = df_valid['text'].apply(lambda x: [word for word in x if word not in stop_words])
