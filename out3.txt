@@ -1,0 +1,30 @@
+Antrenare model
+Epoca   0: Train Loss=2.0891, Train Acc=0.1356, Val Loss=2.0896, Val Acc=0.1260
+Epoca  10: Train Loss=2.0762, Train Acc=0.2491, Val Loss=2.0766, Val Acc=0.2430
+Epoca  20: Train Loss=2.0637, Train Acc=0.3186, Val Loss=2.0641, Val Acc=0.3375
+Epoca  30: Train Loss=2.0517, Train Acc=0.3283, Val Loss=2.0521, Val Acc=0.3505
+Epoca  40: Train Loss=2.0401, Train Acc=0.3331, Val Loss=2.0405, Val Acc=0.3520
+Epoca  50: Train Loss=2.0290, Train Acc=0.3349, Val Loss=2.0293, Val Acc=0.3515
+Epoca  60: Train Loss=2.0182, Train Acc=0.3363, Val Loss=2.0186, Val Acc=0.3510
+Epoca  70: Train Loss=2.0079, Train Acc=0.3358, Val Loss=2.0082, Val Acc=0.3540
+Epoca  80: Train Loss=1.9979, Train Acc=0.3351, Val Loss=1.9982, Val Acc=0.3525
+Epoca  90: Train Loss=1.9883, Train Acc=0.3356, Val Loss=1.9886, Val Acc=0.3520
+Epoca 100: Train Loss=1.9790, Train Acc=0.3353, Val Loss=1.9793, Val Acc=0.3515
+Epoca 110: Train Loss=1.9701, Train Acc=0.3353, Val Loss=1.9704, Val Acc=0.3515
+Epoca 120: Train Loss=1.9615, Train Acc=0.3351, Val Loss=1.9617, Val Acc=0.3520
+Epoca 130: Train Loss=1.9532, Train Acc=0.3351, Val Loss=1.9534, Val Acc=0.3520
+Epoca 140: Train Loss=1.9451, Train Acc=0.3351, Val Loss=1.9453, Val Acc=0.3520
+Epoca 150: Train Loss=1.9374, Train Acc=0.3351, Val Loss=1.9376, Val Acc=0.3520
+Epoca 160: Train Loss=1.9299, Train Acc=0.3351, Val Loss=1.9301, Val Acc=0.3520
+Epoca 170: Train Loss=1.9226, Train Acc=0.3351, Val Loss=1.9228, Val Acc=0.3520
+Epoca 180: Train Loss=1.9157, Train Acc=0.3351, Val Loss=1.9158, Val Acc=0.3520
+Epoca 190: Train Loss=1.9089, Train Acc=0.3351, Val Loss=1.9091, Val Acc=0.3520
+Epoca 199: Train Loss=1.9030, Train Acc=0.3351, Val Loss=1.9032, Val Acc=0.3520
+Acuratete finala pe antrenament: 0.3351
+Acuratete finala pe validare: 0.3520
+Acuratete finala pe test: 0.3475
+
+Antrenare model folosind biblioteca
+Acuratete finala pe antrenament: 0.9943
+Acuratete finala pe validare: 0.8970
+Acuratete finala pe test: 0.8860

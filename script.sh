@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm out2.txt
-touch out2.txt
-python3 main.py > out2.txt
+rm out3.txt
+touch out3.txt
+python3 main.py > out3.txt
