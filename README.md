@@ -25,7 +25,7 @@ Folosește setul Emotion Dataset de pe HuggingFace (dair-ai/motion) sau un CSV s
 - [x] Curățarea textului (opțional)
 - [x] Vectorizarea textului cu TF-IDF
 - [x] Împărțirea în train/test (supervizat și nesupervizat)
-- [ ] Antrenarea modelului
+- [x] Antrenarea modelului
 - [ ] Evaluarea modelului
 - [ ] Interfață simplă de testare (CLI sau Streamlit)
 
@@ -222,6 +222,23 @@ $$\nabla_{\bf w} J({\bf w}) = \frac{1}{N}\sum_{n=1}^{N} (y^{(n)} - t^{(n)}) {\bf
 5. &nbsp;&nbsp;&nbsp;&nbsp; $t \leftarrow t+1 $
 
 Față de forma aceasta de bază am introdus și un factor de regularizare pentru a preveni overfitting-ul.
+Am considerat un reg_lambda = 0.1 și am folsit pentru calculul funcției de loss astfel:
+
+`train_loss_val = cross_entropy(Y_train, T_train_onehot) + (reg_lambda / 2) * np.sum(w * w)`
+
+dar și în cazul calculului gradientului:
+
+`grad = (1 / N) * X_train.T @ (Y_train - T_train_onehot) + reg_lambda * w`
+
+### Matricea de Confuzie
+
+Matricea de confuzie este un tabel folosit în probleme de clasificare pentru a putea aprecia unde se găsesc erorile făcute de model.
+
+Rândurile reprezintă clasele ale căror rezultat sunt cele așteptate în timp ce coloanele reprezintă predicțiile care au fost făcute. Tabelul ale rolul de a facilita descoperirea de prediciții greșite făcute de model.
+
+**Exemplu de model de matrice de confuzie:**
+
+![Matrice_de_Confuzie](Matrice_de_confuzie.png)
 
 ## Tehnologii folosite
 
@@ -231,6 +248,7 @@ Față de forma aceasta de bază am introdus și un factor de regularizare pentr
 | pandas   | biblioteca ce conține metode, obiecte și implementări pentru structuri de date și analiză de date în python | [pandas](https://pandas.pydata.org/docs/)|
 | nltk   | bibliotecă care conține metode, obiecte și implementări pentru procesarea textului scris de oameni pentru a oferi suport în cadrul dezvoltării NLP-urilor | [nltk](https://www.nltk.org/) |
 | matplotlib   | bibliotecă cuprinzătoare pentru crearea de vizualizări statice, animate și interactive | [matplotlib](https://matplotlib.org/stable/index.html)|
+| SciPy   | colecție de algoritmi matematici și de funcții construite pe baza bibliotecii numpy, oferă user-ului comenzi high-level și clase pentru a manipula date | [matplotlib](https://matplotlib.org/stable/index.html)|
 
 ## Surse
 
@@ -238,7 +256,13 @@ Față de forma aceasta de bază am introdus și un factor de regularizare pentr
 
 [Preprocessing Steps for Natural Language Processing (NLP): A Beginner’s Guide](https://medium.com/@maleeshadesilva21/preprocessing-steps-for-natural-language-processing-nlp-a-beginners-guide-d6d9bf7689c9)
 
-[Geeks for Geeks](https://www.geeksforgeeks.org/understanding-tf-idf-term-frequency-inverse-document-frequency/)
+[Geeks for Geeks[TF-IDF]](https://www.geeksforgeeks.org/understanding-tf-idf-term-frequency-inverse-document-frequency/)
+
+[Geeks for Geeks[Logistic_Regression]](https://www.geeksforgeeks.org/machine-learning/understanding-logistic-regression/)
+
+[Geeks for Geeks[Cross-Entropy]](https://www.geeksforgeeks.org/machine-learning/what-is-cross-entropy-loss-function/)
+
+[Sci-py documentation](https://docs.scipy.org/doc/scipy/reference/)
 
 [Scikit-learn documentation](https://scikit-learn.org/stable/)
 
