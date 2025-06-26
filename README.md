@@ -158,7 +158,7 @@ TF-IDF este o metrică statistică folosită în procesarea limbajului natural (
 Are rolul de echilibra cuvintele cuvinte și rar folosite pentru a evidenția cei mai relevanți termeni.
 
 **The TF-IDF Formula:**
-$$TF-IDF(T, d, D) = TF(t, d) * IDF(t, D)$$
+$$\mathrm{TF-IDF(T, d, D) = TF(t, d) * IDF(t, D)}$$
 
 Un scor mai mare arată o mai mare importanță a termenului în cadrul acelui document.
 
@@ -198,7 +198,9 @@ Regresia logistică are avantajul față de regresia liniară că reușește să
 Pentru funcția de loss am ales cross-entropy deoarce este mai potrivită pentru clasificare decât funcția de negative log likelihood. Cross-entropy este folosită în acest caz împreună cu softmax și negative log likelihood. 
 
 **Aceasta este formula utilizată:**
-$$MCE = -(1/N)*\sum_{i=1}^n*\sum_{j=1}^C*(y_{i,j}*log(p_{i,j}))$$
+$$
+\mathrm{MCE} = -\frac{1}{N} \sum_{i=1}^{n} \sum_{j=1}^{C} y_{i,j} \log(p_{i,j})
+$$
 
 Funcția cross-entropy poate fi integrată foarte bine cu metode de optimizare cum ar gradient descendent.
 
@@ -218,7 +220,7 @@ $$\nabla_{\bf w} J({\bf w}) = \frac{1}{N}\sum_{n=1}^{N} (y^{(n)} - t^{(n)}) {\bf
 1. ${\bf w_0}$ = ${\bf w}_{init}$
 2. $t$ = 1
 3. **cât timp** $t$ < nr\_epoci:
-4. &nbsp;&nbsp;&nbsp;&nbsp; ${\bf w}_t \leftarrow {\bf w}_{t-1} - \alpha \nabla_{\bf w} J({\bf w})$
+4. &nbsp;&nbsp;&nbsp;&nbsp; $\mathrm{\bf w}_t \leftarrow {\bf w}_{t-1} - \alpha \nabla_{\bf w} J({\bf w})$
 5. &nbsp;&nbsp;&nbsp;&nbsp; $t \leftarrow t+1 $
 
 Față de forma aceasta de bază am introdus și un factor de regularizare pentru a preveni overfitting-ul.
