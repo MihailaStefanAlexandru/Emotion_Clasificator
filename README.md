@@ -248,7 +248,7 @@ Rândurile reprezintă clasele ale căror rezultat sunt cele așteptate în timp
 | pandas   | biblioteca ce conține metode, obiecte și implementări pentru structuri de date și analiză de date în python | [pandas](https://pandas.pydata.org/docs/)|
 | nltk   | bibliotecă care conține metode, obiecte și implementări pentru procesarea textului scris de oameni pentru a oferi suport în cadrul dezvoltării NLP-urilor | [nltk](https://www.nltk.org/) |
 | matplotlib   | bibliotecă cuprinzătoare pentru crearea de vizualizări statice, animate și interactive | [matplotlib](https://matplotlib.org/stable/index.html)|
-| SciPy   | colecție de algoritmi matematici și de funcții construite pe baza bibliotecii numpy, oferă user-ului comenzi high-level și clase pentru a manipula date | [matplotlib](https://matplotlib.org/stable/index.html)|
+| SciPy   | colecție de algoritmi matematici și de funcții construite pe baza bibliotecii numpy, oferă user-ului comenzi high-level și clase pentru a manipula date | [SciPy](https://docs.scipy.org/doc/scipy/tutorial/index.html)|
 
 ## Surse
 
